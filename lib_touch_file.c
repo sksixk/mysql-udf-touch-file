@@ -89,7 +89,7 @@ my_ulonglong touch_file(
 ,	char *is_null
 ,	char *error
 ){
-  FILE *fp = fopen(args->args[0], "w");
+  FILE *fp = fopen(args->args[0], "a");
 
   if (fp == NULL) {
     return 1;
